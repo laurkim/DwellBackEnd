@@ -2705,22 +2705,17 @@ workspaces = [
 # Iterate over each workspace and create new instances in database
 workspaces.each do |workspace|
   Workspace.create(
-       yelp_id: business[:id],
-       name: business[:name],
-       image_url: business[:image_url],
-       yelp_url: business[:url],
-       rating: business[:rating],
-       latitude: business[:latitude],
-       longitude: business[:longitude],
-       address_one: business[:address1],
-       address_two: business[:address2],
-       city: business[:city],
-       zip_code: business[:zip],
-       phone: business[:display_phone]
+       yelp_id: workspace[:id],
+       name: workspace[:name],
+       image_url: workspace[:image_url],
+       yelp_url: workspace[:url],
+       rating: workspace[:rating],
+       latitude: workspace[:latitude],
+       longitude: workspace[:longitude],
+       address_one: workspace[:address1],
+       address_two: workspace[:address2],
+       city: workspace[:city],
+       zip_code: workspace[:zip],
+       phone: workspace[:display_phone]
   )
 end
-
-# Test the relationships
-lo = User.create(first_name: "Laura", last_name: "Kim", username: "Lo", email: "lo@gmail.com", password: "password", password_confirmation: "password")
-booking = Booking.create(user_id: lo.id, workspace_id: Workspace.first.id)
-favorite = Favorite.create(user_id: lo.id, workspace_id: Workspace.last.id)

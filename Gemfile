@@ -5,8 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use JWT to encode tokens for User Authorization
+gem 'jwt'
+
 # Use Active Model Serializers to limit information passed to client
 gem 'active_model_serializers'
+
+# Use Figaro to create a hidden file
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
