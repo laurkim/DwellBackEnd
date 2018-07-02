@@ -2720,4 +2720,5 @@ end
 
 lo = User.create(first_name: "Laura", last_name: "Kim", username: "Lo", email: "lo@gmail.com", password: "password", password_confirmation: "password")
 
-o = Booking.create(user_id: lo.id, workspace_id: Workspace.first.id)
+booking = Booking.create(user_id: lo.id, workspace_id: Workspace.first.id)
+favorite = Favorite.create(user_id: lo.id, workspace_id: Workspace.last.id)
