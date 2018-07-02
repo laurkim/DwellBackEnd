@@ -1,2 +1,2 @@
-class BookingsController < ApplicationController
+class Api::V1::BookingsController < ApplicationController
 end
