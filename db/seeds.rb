@@ -1,3 +1,4 @@
+# Add seeds from Yelp API query
 workspaces = [
   {
     "id": "pimuUR-TEHIjUla3S3jemQ",
@@ -2701,7 +2702,8 @@ workspaces = [
   }
 ]
 
-workspaces.each do |business|
+# Iterate over each workspace and create new instances in database
+workspaces.each do |workspace|
   Workspace.create(
        yelp_id: business[:id],
        name: business[:name],
@@ -2718,7 +2720,7 @@ workspaces.each do |business|
   )
 end
 
+# Test the relationships
 lo = User.create(first_name: "Laura", last_name: "Kim", username: "Lo", email: "lo@gmail.com", password: "password", password_confirmation: "password")
-
 booking = Booking.create(user_id: lo.id, workspace_id: Workspace.first.id)
 favorite = Favorite.create(user_id: lo.id, workspace_id: Workspace.last.id)
