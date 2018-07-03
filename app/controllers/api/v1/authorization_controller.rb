@@ -12,9 +12,9 @@ class Api::V1::AuthorizationController < ApplicationController
       }
     else
       render json: {
-        errors: "User not found"
+        errors: "User Not Found"
       }, status: :unauthorized
     end
   end
-  
+
 end

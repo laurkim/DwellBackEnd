@@ -1,9 +1,8 @@
 class Api::V1::UsersController < ApplicationController
   def create
-      @user = User.new(user_params)
+    @user = User.new(user_params)
     if (@user.save)
       token = generate_token
-
       render json: {
         token: token,
         username: @user.username,

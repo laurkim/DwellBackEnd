@@ -3,7 +3,8 @@ class ApplicationController < ActionController::API
     payload = {
       id: @user.id
     }
-    JWT.encode(payload, ENV['SECRET_PHRASE'], ENV['SECRET_KEY'])
+    token = JWT.encode(payload, ENV["SECRET_PHRASE"], ENV["SECRET_KEY"])
+    token
   end
 
   def get_token
@@ -12,8 +13,9 @@ class ApplicationController < ActionController::API
 
   def decode_token
     token = get_token
+
     begin
-      decoded_token = JWT.decode(token, ENV['SECRET_PHRASE'], true, { algorithm: ENV['SECRET_KEY'] })
+      decoded_token = JWT.decode(token, ENV["SECRET_PHRASE"], true, { algorithm: ENV["SECRET_KEY"]})
     rescue JWT::DecodeError
       return nil
     end
@@ -37,7 +39,7 @@ class ApplicationController < ActionController::API
     @user = User.find_by(id: params[:user_id])
     if @user.id != decode_token[0]["id"]
       render json: {
-        message: "User Does Not Match"
+        message: "User Unauthorized"
       }, status: :unauthorized
     end
   end
