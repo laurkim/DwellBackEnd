@@ -6,7 +6,6 @@ class Api::V1::AuthorizationController < ApplicationController
       token = generate_token
       render json: {
         token: token,
-        id: @user.id,
         username: @user.username
       }
     else
