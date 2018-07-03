@@ -14,6 +14,9 @@ gem 'active_model_serializers'
 # Use Figaro to create a hidden file
 gem 'figaro'
 
+# Use Validates Overlap to verify user's workspace booking
+gem 'validates_overlap'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record

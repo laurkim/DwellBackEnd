@@ -6,7 +6,7 @@ class Api::V1::AuthorizationController < ApplicationController
       token = generate_token
       render json: {
         token: token,
-        username: @user.username
+        user: JSON.parse(UserSerializer.new(@user).to_json)
       }
     else
       render json: {
