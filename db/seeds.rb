@@ -2712,10 +2712,10 @@ workspaces.each do |workspace|
        rating: workspace[:rating],
        latitude: workspace[:latitude],
        longitude: workspace[:longitude],
-       address_one: workspace[:address1],
-       address_two: workspace[:address2],
-       city: workspace[:city],
-       zip_code: workspace[:zip],
+       address_one: workspace[:location][:address1],
+       address_two: workspace[:location][:address2],
+       city: workspace[:location][:city],
+       zip_code: workspace[:location][:zip],
        phone: workspace[:display_phone]
   )
 end
