@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20180702153115) do
   create_table "bookings", force: :cascade do |t|
     t.integer "user_id"
     t.integer "workspace_id"
+    t.integer "start_time"
+    t.integer "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
