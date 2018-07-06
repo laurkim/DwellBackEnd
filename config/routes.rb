@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post '/login', to: 'authorization#create'
 
       resources :workspaces, only: [:index]
+      resources :bookings, only: [:create]
     end
   end
 end

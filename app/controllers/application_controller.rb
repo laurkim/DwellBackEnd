@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
   end
 
   def get_token
-    request.headers["Authorization"]
+    request.headers["Authorization"].split(" ")[1]
   end
 
   def decode_token
@@ -16,11 +16,11 @@ class ApplicationController < ActionController::API
 
     begin
       decoded_token = JWT.decode(token, ENV["SECRET_PHRASE"], true, { algorithm: ENV["SECRET_KEY"]})
+      my_user = decoded_token[0]["id"]
     rescue JWT::DecodeError
       return nil
     end
-
-    decoded_token
+    my_user
   end
 
   def is_authenticated?
@@ -30,7 +30,7 @@ class ApplicationController < ActionController::API
   def requires_login
     if !is_authenticated?
       render json: {
-        message: "Login Failed"
+        message: "You Must Be Logged In"
       }, status: :unauthorized
     end
   end
