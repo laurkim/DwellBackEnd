@@ -1,6 +1,168 @@
 # Add seeds from Yelp API query
 workspaces = [
   {
+    "id": "qvwJSGnJBD4_vWCWHgWHmA",
+    "alias": "dr-smood-new-york-3",
+    "name": "Dr Smood",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Vd3mAc5UwCXes97vOApfPQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/dr-smood-new-york-3?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 67,
+    "rating": 4,
+    "coordinates": {
+      "latitude": 40.74427,
+      "longitude": -73.98907
+    },
+    "price": "$$",
+    "location": {
+      "address1": "1151 Broadway",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10001",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "+17863344420",
+    "display_phone": "(786) 334-4420",
+    "distance": 1983.624083303872
+  },
+  {
+    "id": "EutWbSfK6_rHrp79e_cCqA",
+    "alias": "black-press-coffee-new-york",
+    "name": "Black Press Coffee",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/i_4qmpQxbnVss9FUxiM2Sg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/black-press-coffee-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 40,
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 40.74221,
+      "longitude": -73.98308
+    },
+    "price": "$",
+    "location": {
+      "address1": "100 Lexington Ave",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10016",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "",
+    "display_phone": "",
+    "distance": 2036.8400300458177
+  },
+  {
+    "id": "-8nEZ20KDfr4PPH47MrAOA",
+    "alias": "la-colombe-coffee-new-york-2",
+    "name": "La Colombe Coffee",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/m9eZazy8jLN3egwmEKbnWQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/la-colombe-coffee-new-york-2?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 607,
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 40.72396,
+      "longitude": -73.99643
+    },
+    "price": "$$",
+    "location": {
+      "address1": "270 Lafayette St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10012",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "+12126251717",
+    "display_phone": "(212) 625-1717",
+    "distance": 4304.063772859549
+  },
+  {
+    "id": "3-4GEQCrjj0eDfzaKd1oGQ",
+    "alias": "blank-slate-tea-new-york",
+    "name": "Blank Slate Tea",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WOeGOlJV100pj65T7DEivg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/blank-slate-tea-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 24,
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 40.74537,
+      "longitude": -73.98453
+    },
+    "price": "$$",
+    "location": {
+      "address1": "121 Madison Ave",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10016",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "+16467070256",
+    "display_phone": "(646) 707-0256",
+    "distance": 1739.8513660079955
+  },
+  {
+    "id": "euO-c5OpErE3UJCAliC4Bw",
+    "alias": "mellow-yellow-coffee-and-vibes-new-york",
+    "name": "Mellow Yellow Coffee and Vibes",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/IOmd6zzw1dSdLBCgqj0l-Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/mellow-yellow-coffee-and-vibes-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 142,
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 40.77929,
+      "longitude": -73.94785
+    },
+    "price": "$",
+    "location": {
+      "address1": "1729 1st Av",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10128",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "+12127227220",
+    "display_phone": "(212) 722-7220",
+    "distance": 3333.6728863446724
+  },
+  {
+    "id": "N4Pss0mR4ygDOoSRpM2FQA",
+    "alias": "culture-espresso-new-york",
+    "name": "Culture Espresso",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CtgLR6fsZyTrgMmz3R-imQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/culture-espresso-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
+    "review_count": 812,
+    "rating": 4,
+    "coordinates": {
+      "latitude": 40.7521922375529,
+      "longitude": -73.985756306206
+    },
+    "price": "$$",
+    "location": {
+      "address1": "72 W 38th St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10018",
+      "country": "US",
+      "state": "NY"
+    },
+    "phone": "+12123020200",
+    "display_phone": "(212) 302-0200",
+    "distance": 1081.3542527914417
+  }, 
+  {
     "id": "pimuUR-TEHIjUla3S3jemQ",
     "alias": "coffee-project-new-york-new-york",
     "name": "Coffee Project New York",
@@ -649,33 +811,6 @@ workspaces = [
     "distance": 1365.4813332645904
   },
   {
-    "id": "N4Pss0mR4ygDOoSRpM2FQA",
-    "alias": "culture-espresso-new-york",
-    "name": "Culture Espresso",
-    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CtgLR6fsZyTrgMmz3R-imQ/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/culture-espresso-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 812,
-    "rating": 4,
-    "coordinates": {
-      "latitude": 40.7521922375529,
-      "longitude": -73.985756306206
-    },
-    "price": "$$",
-    "location": {
-      "address1": "72 W 38th St",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10018",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+12123020200",
-    "display_phone": "(212) 302-0200",
-    "distance": 1081.3542527914417
-  },
-  {
     "id": "Wslk06IopmoMSWEpS0DMCg",
     "alias": "lucid-café-new-york-4",
     "name": "Lucid Café",
@@ -809,33 +944,6 @@ workspaces = [
     "phone": "+12122289074",
     "display_phone": "(212) 228-9074",
     "distance": 3529.8905364444868
-  },
-  {
-    "id": "-8nEZ20KDfr4PPH47MrAOA",
-    "alias": "la-colombe-coffee-new-york-2",
-    "name": "La Colombe Coffee",
-    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/m9eZazy8jLN3egwmEKbnWQ/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/la-colombe-coffee-new-york-2?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 607,
-    "rating": 4.5,
-    "coordinates": {
-      "latitude": 40.72396,
-      "longitude": -73.99643
-    },
-    "price": "$$",
-    "location": {
-      "address1": "270 Lafayette St",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10012",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+12126251717",
-    "display_phone": "(212) 625-1717",
-    "distance": 4304.063772859549
   },
   {
     "id": "5wCPxKaKhzz8MwBWQ059fQ",
@@ -1296,33 +1404,6 @@ workspaces = [
     "phone": "+12127570580",
     "display_phone": "(212) 757-0580",
     "distance": 1283.8106875157707
-  },
-  {
-    "id": "EutWbSfK6_rHrp79e_cCqA",
-    "alias": "black-press-coffee-new-york",
-    "name": "Black Press Coffee",
-    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/i_4qmpQxbnVss9FUxiM2Sg/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/black-press-coffee-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 40,
-    "rating": 4.5,
-    "coordinates": {
-      "latitude": 40.74221,
-      "longitude": -73.98308
-    },
-    "price": "$",
-    "location": {
-      "address1": "100 Lexington Ave",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10016",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "",
-    "display_phone": "",
-    "distance": 2036.8400300458177
   },
   {
     "id": "blX8Y6O0J4p6fXVcTRmANg",
@@ -2000,33 +2081,6 @@ workspaces = [
     "distance": 6180.413951000811
   },
   {
-    "id": "3-4GEQCrjj0eDfzaKd1oGQ",
-    "alias": "blank-slate-tea-new-york",
-    "name": "Blank Slate Tea",
-    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WOeGOlJV100pj65T7DEivg/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/blank-slate-tea-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 24,
-    "rating": 4.5,
-    "coordinates": {
-      "latitude": 40.74537,
-      "longitude": -73.98453
-    },
-    "price": "$$",
-    "location": {
-      "address1": "121 Madison Ave",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10016",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+16467070256",
-    "display_phone": "(646) 707-0256",
-    "distance": 1739.8513660079955
-  },
-  {
     "id": "JSTIhVUrvVhHxVvifNiwFQ",
     "alias": "roasting-plant-new-york-3",
     "name": "Roasting Plant",
@@ -2079,33 +2133,6 @@ workspaces = [
     "phone": "+12129299333",
     "display_phone": "(212) 929-9333",
     "distance": 2701.9813254014302
-  },
-  {
-    "id": "euO-c5OpErE3UJCAliC4Bw",
-    "alias": "mellow-yellow-coffee-and-vibes-new-york",
-    "name": "Mellow Yellow Coffee and Vibes",
-    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/IOmd6zzw1dSdLBCgqj0l-Q/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/mellow-yellow-coffee-and-vibes-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 142,
-    "rating": 4.5,
-    "coordinates": {
-      "latitude": 40.77929,
-      "longitude": -73.94785
-    },
-    "price": "$",
-    "location": {
-      "address1": "1729 1st Av",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10128",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+12127227220",
-    "display_phone": "(212) 722-7220",
-    "distance": 3333.6728863446724
   },
   {
     "id": "aRuRRodiS2DWJmMcNXxiBQ",
@@ -2620,33 +2647,6 @@ workspaces = [
     "distance": 2287.478596930729
   },
   {
-    "id": "Xuw7N7_KqDBZMSAX5H-H1g",
-    "alias": "elsewhere-espresso-new-york",
-    "name": "Elsewhere Espresso",
-    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/wFxOErUbPY2HmaarzuXKMA/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/elsewhere-espresso-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 88,
-    "rating": 4,
-    "coordinates": {
-      "latitude": 40.7268278898069,
-      "longitude": -73.9869972123936
-    },
-    "price": "$",
-    "location": {
-      "address1": "335 E 6th St",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10003",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+16464763173",
-    "display_phone": "(646) 476-3173",
-    "distance": 3780.8442099167173
-  },
-  {
     "id": "o6mE4IK7U2wruJmBF3zWnA",
     "alias": "bluestone-lane-new-york-3",
     "name": "Bluestone Lane Collective Cafe",
@@ -2672,33 +2672,6 @@ workspaces = [
     "phone": "+17183746858",
     "display_phone": "(718) 374-6858",
     "distance": 3305.5910730287505
-  },
-  {
-    "id": "qvwJSGnJBD4_vWCWHgWHmA",
-    "alias": "dr-smood-new-york-3",
-    "name": "Dr Smood",
-    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Vd3mAc5UwCXes97vOApfPQ/o.jpg",
-    "is_closed": false,
-    "url": "https://www.yelp.com/biz/dr-smood-new-york-3?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
-    "review_count": 67,
-    "rating": 4,
-    "coordinates": {
-      "latitude": 40.74427,
-      "longitude": -73.98907
-    },
-    "price": "$$",
-    "location": {
-      "address1": "1151 Broadway",
-      "address2": "",
-      "address3": "",
-      "city": "New York",
-      "zip_code": "10001",
-      "country": "US",
-      "state": "NY"
-    },
-    "phone": "+17863344420",
-    "display_phone": "(786) 334-4420",
-    "distance": 1983.624083303872
   }
 ]
 
