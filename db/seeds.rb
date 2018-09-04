@@ -2710,12 +2710,12 @@ workspaces.each do |workspace|
        image_url: workspace[:image_url],
        yelp_url: workspace[:url],
        rating: workspace[:rating],
-       latitude: workspace[:latitude],
-       longitude: workspace[:longitude],
+       latitude: workspace[:coordinates][:latitude],
+       longitude: workspace[:coordinates][:longitude],
        address_one: workspace[:location][:address1],
        address_two: workspace[:location][:address2],
        city: workspace[:location][:city],
-       zip_code: workspace[:location][:zip],
+       zip_code: workspace[:location][:zip_code],
        phone: workspace[:display_phone]
   )
 end
