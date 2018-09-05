@@ -7,11 +7,11 @@ class Api::V1::AuthorizationController < ApplicationController
       render json: {
         token: token,
         user: JSON.parse(UserSerializer.new(@user).to_json)
-      }
+      }, status: 200
     else
       render json: {
-        errors: "User Not Found"
-      }, status: :unauthorized
+        errors: "Account Does Not Exist"
+      }, status: 401
     end
   end
 
