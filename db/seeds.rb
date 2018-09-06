@@ -50,8 +50,8 @@ workspaces = [
       "country": "US",
       "state": "NY"
     },
-    "phone": "",
-    "display_phone": "",
+    "phone": "+19172615962",
+    "display_phone": "(917) 261-5962",
     "distance": 2036.8400300458177
   },
   {
@@ -161,7 +161,7 @@ workspaces = [
     "phone": "+12123020200",
     "display_phone": "(212) 302-0200",
     "distance": 1081.3542527914417
-  }, 
+  },
   {
     "id": "pimuUR-TEHIjUla3S3jemQ",
     "alias": "coffee-project-new-york-new-york",
@@ -1111,7 +1111,7 @@ workspaces = [
   {
     "id": "icqOzQ93InjnlM9MlS8tYw",
     "alias": "romeo-and-juliet-colombian-coffee-new-york",
-    "name": "Romeo and Juliet Colombian Coffee",
+    "name": "Romeo & Juliet Colombian Coffee",
     "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/z9aBeohUL4pB6WEKMLbDZQ/o.jpg",
     "is_closed": false,
     "url": "https://www.yelp.com/biz/romeo-and-juliet-colombian-coffee-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
@@ -1975,7 +1975,7 @@ workspaces = [
   {
     "id": "FO3JWYQU6QK-kucKvWWphQ",
     "alias": "caveman-coffee-cave-brick-new-york",
-    "name": "Caveman Coffee Cave @ BRICK",
+    "name": "Caveman Coffee Cave",
     "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/rOaZXvlEBsrtQBlZYgr41Q/o.jpg",
     "is_closed": false,
     "url": "https://www.yelp.com/biz/caveman-coffee-cave-brick-new-york?adjust_creative=icwmiTG9flUWjY37GRmqqw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=icwmiTG9flUWjY37GRmqqw",
@@ -2534,8 +2534,8 @@ workspaces = [
       "country": "US",
       "state": "NY"
     },
-    "phone": "",
-    "display_phone": "",
+    "phone": "+12123889731",
+    "display_phone": "(212) 388-9731",
     "distance": 3709.5850305028166
   },
   {
