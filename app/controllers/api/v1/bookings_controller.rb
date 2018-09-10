@@ -17,7 +17,7 @@ class Api::V1::BookingsController < ApplicationController
 
     # If there are no overlaps over all existing bookings, persist the new booking and render it to the client
     if @new_booking.save
-      render json: @new_booking
+      render json: {booking: @new_booking, message: "Your booking is confirmed!"}
     end
   end
 
