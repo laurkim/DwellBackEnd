@@ -3,7 +3,8 @@ class Api::V1::BookingsController < ApplicationController
 
   def create
     user_id = decode_token
-    @new_booking = Booking.new(user_id: user_id, workspace_id: params["workspaceId"], start_time: params["startTime"], end_time: params["endTime"])
+    @new_booking = Booking.new(booking_params)
+    @new_booking.user_id = user_id
     workspaceBookings = Booking.where(workspace_id: params["workspaceId"])
 
     # Iterate over each existing booking where the workspace id matches the one coming from the client
@@ -24,5 +25,6 @@ class Api::V1::BookingsController < ApplicationController
   private
 
   def booking_params
+    params.require(:booking).permit(:workspace_id, :start_time, :end_time)
   end
 end
