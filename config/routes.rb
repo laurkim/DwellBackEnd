@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/register', to: 'users#create'
       post '/login', to: 'authorization#create'
-
+      post '/fetch_user', to: 'users#show'
       resources :workspaces, only: [:index]
       resources :bookings, only: [:create]
       resources :favorites, only: [:create]

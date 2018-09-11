@@ -15,6 +15,14 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
+  def show
+    token = params["token"]
+    decoded_token = JWT.decode(token, ENV["SECRET_PHRASE"], true, { algorithm: ENV["SECRET_KEY"]})
+    user_id = decoded_token[0]["id"]
+    user = User.find_by(id: user_id)
+    render json: user
+  end
+
   private
 
   def user_params
