@@ -2,10 +2,10 @@ class Api::V1::BookingsController < ApplicationController
   before_action :requires_login, only: [:create]
 
   def create
-    user_id = decode_token
+    user = the_current_user
     @new_booking = Booking.new(booking_params)
-    @new_booking.user_id = user_id
-    workspaceBookings = Booking.where(workspace_id: params["workspaceId"])
+    @new_booking.user_id = user.id
+    workspaceBookings = Booking.where(workspace_id: params["booking"]["workspace_id"])
 
     # Iterate over each existing booking where the workspace id matches the one coming from the client
     # If there is an overlap of start and/or end time for the new booking the client is trying to create,

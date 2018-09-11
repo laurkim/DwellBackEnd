@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  
+
   def generate_token
     payload = {
       id: @user.id
@@ -14,7 +14,6 @@ class ApplicationController < ActionController::API
 
   def decode_token
     token = get_token
-
     begin
       decoded_token = JWT.decode(token, ENV["SECRET_PHRASE"], true, { algorithm: ENV["SECRET_KEY"]})
       my_user = decoded_token[0]["id"]
@@ -45,4 +44,8 @@ class ApplicationController < ActionController::API
     end
   end
 
+  def the_current_user
+    user_id = decode_token
+    @the_current_user = User.find_by(id: user_id)
+  end
 end
