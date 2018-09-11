@@ -16,7 +16,9 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    token = params["token"]
+    # Retrieve token from Headers in Post request to find current user based...
+    # ...on token currently in localStorage
+    token = request.headers["Authorization"].split(" ")[1]
     decoded_token = JWT.decode(token, ENV["SECRET_PHRASE"], true, { algorithm: ENV["SECRET_KEY"]})
     user_id = decoded_token[0]["id"]
     user = User.find_by(id: user_id)
