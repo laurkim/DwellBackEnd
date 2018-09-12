@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       post '/fetch_user', to: 'users#show'
       resources :workspaces, only: [:index]
       resources :bookings, only: [:create]
-      resources :favorites, only: [:create]
+      resources :favorites, only: [:create, :destroy]
     end
   end
 end
