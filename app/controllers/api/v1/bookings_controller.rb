@@ -1,5 +1,11 @@
 class Api::V1::BookingsController < ApplicationController
-  before_action :requires_login, only: [:create]
+  before_action :requires_login, only: [:index, :create]
+
+  def index
+    user = the_current_user
+    @bookings = Booking.where(user_id: user.id)
+    render json: @bookings
+  end
 
   def create
     user = the_current_user

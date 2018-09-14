@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       post '/login', to: 'authorization#create'
       post '/fetch_user', to: 'users#show'
       resources :workspaces, only: [:index]
-      resources :bookings, only: [:create]
+      resources :bookings, only: [:index, :create]
       resources :favorites, only: [:create, :destroy]
     end
   end
