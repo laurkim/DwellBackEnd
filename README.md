@@ -1,3 +1,5 @@
+# Dwell
+
 This is a Ruby on Rails API back end for Dwell, an application that allows users to book an hour-long workspace for productivity at any WiFi cafe in Manhattan.
 
 **This API has been deployed to Heroku and can be found _[here](https://dwell-api.herokuapp.com/api/v1/workspaces)_.**
